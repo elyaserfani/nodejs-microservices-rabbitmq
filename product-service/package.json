@@ -1,0 +1,13 @@
+{
+  "name": "product-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Elyas Erfani",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.3",
+    "mongoose": "^6.9.1"
+  }
+}
