@@ -3,6 +3,7 @@ services:
   rabbitmq:
     image: rabbitmq:3-management-alpine
     container_name: "rabbitmq"
+    restart: unless-stopped
     ports:
       - 5672:5672
       - 15672:15672
@@ -13,6 +14,7 @@ services:
       - rabbitmq_go_net
   mongodb:
     image: mongo
+    restart: unless-stopped
     ports:
       - "27017:27017"
     environment:
@@ -22,6 +24,7 @@ services:
       - mongo-data:/data/db
   mongo-express:
     image: mongo-express
+    restart: unless-stopped
     ports:
       - "8080:8081"
     environment:
